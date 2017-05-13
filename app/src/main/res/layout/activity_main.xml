@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gokdemir.aysenur.greenapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="33dp">
+
+        <EditText
+            android:id="@+id/boytxt"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Boyunuzu giriniz"
+            android:inputType="textPersonName"
+
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <EditText
+            android:id="@+id/kilotxt"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.13"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Kilonuzu Giriniz"
+
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/txtboy"
+            tools:layout_editor_absoluteX="26dp" />
+
+        <Button
+            android:id="@+id/hesapla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_green_light"
+            android:text="HESAPLA"
+            app:layout_constraintTop_toBottomOf="@+id/kilotxt"
+            tools:layout_editor_absoluteX="26dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/custom_edittext"
+            android:hint="İsminizi Giriniz"
+            android:ems="10"
+            android:layout_above="@+id/editTextBoy"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:id="@+id/editTextName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
